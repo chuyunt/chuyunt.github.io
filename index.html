@@ -19,16 +19,18 @@
 
   <script>
     const herfStr = window.location.href
-    if (herfStr.indexOf('lion1ou.win') > -1) {
-      window.location.href = herfStr.replace('lion1ou.win', 'blog.lion1ou.tech')
-    } else {
-      console.log('路径错误')
-    }
+    setTimeout(() => {
+      if (herfStr.indexOf('lion1ou.win') > -1) {
+        window.location.href = herfStr.replace('lion1ou.win', 'blog.lion1ou.tech')
+      } else {
+        alert('路径错误')
+      }
+    }, 2000)
   </script>
 </head>
 
 <body style="text-align: center;">
-  页面跳转中...
+  当前域名已迁移，页面自动跳转中...
   <br />
   若跳转失败，请直接访问 <a href="http://blog.lion1ou.tech">http://blog.lion1ou.tech</a>
 </body>
